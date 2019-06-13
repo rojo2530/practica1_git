@@ -6,7 +6,7 @@ Lo haríamos con el comando:
 
 <code>git reset --hard HEAD~1</code> 
 
-Lo hacemos con --hard para descartar los cambios en el Working copy del último commy ~1 , para volver hacia atrás 1 commit.
+Lo hacemos con --hard para descartar los cambios en el Working copy del último commtit, ~1 lo usamos para volver hacia atrás 1 commit.
 
 
 **2.- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?**
@@ -36,10 +36,10 @@ En este caso si que causa un conflicto , porque han sido modificadas la mismas l
 
 En este caso el fichero git-nuestro.md se actualiza y hace merge con fast forward, y no causa ningun conflicto. 
 
- git merge styled 
+ *git merge styled 
  Updating 32e44fe..d707818 Fast-forward  
  git-nuestro.md | 18 +++++++++---------  
- 1 file changed, 9 insertions(+), 9 deletions(-)
+ 1 file changed, 9 insertions(+), 9 deletions(-)*
 
 En este caso no hay conflicto porque solo se ha editado el fichero de la rama styled, el de master no ha sido modificado después del primer commit. 
 
@@ -47,7 +47,7 @@ En este caso no hay conflicto porque solo se ha editado el fichero de la rama st
 
 Use el comando:
 
-*git log --graph --decorate --pretty=oneline
+<code>git log --graph --decorate --pretty=oneline</code>
 
 Se puede usar un alias para no tener que escribirlo entero. 
 
@@ -93,7 +93,7 @@ El Id lo sacamos del comando git reflog.
 
 Como siempre esta vez por ejemplo podemos ver el commit inicial desde git log
 
-**13.- ¿Que comando o comandos utilizaste en el paso 33? **
+**13.- ¿Que comando o comandos utilizaste en el paso 33?**
 
 <code>git reset --hard 2b3c4e7 </code>
 
